@@ -18,6 +18,12 @@
       "title": "Next Workspace",
       "description": "Switch to the next workspace",
       "mode": "no-view"
+    },
+    {
+      "name": "shuffle",
+      "title": "Shuffle",
+      "description": "Toggle shuffle play",
+      "mode": "no-view"
     }
   ],
   "dependencies": {
