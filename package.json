@@ -14,15 +14,15 @@
       "mode": "no-view"
     },
     {
-      "name": "next",
-      "title": "Next Workspace",
-      "description": "Switch to the next workspace",
-      "mode": "no-view"
-    },
-    {
       "name": "shuffle",
       "title": "Shuffle",
       "description": "Toggle shuffle play",
+      "mode": "no-view"
+    },
+    {
+      "name": "nextTrack",
+      "title": "Next track",
+      "description": "Play next track",
       "mode": "no-view"
     }
   ],

@@ -1,0 +1,27 @@
+#!/usr/bin/osascript
+
+# Required parameters:
+# @raycast.schemaVersion 1
+# @raycast.title newTerm
+# @raycast.mode compact
+
+# Optional parameters:
+# @raycast.icon 🤖
+
+# Documentation:
+# @raycast.description open new terminal
+# @raycast.author shezcode
+# @raycast.authorURL https://raycast.com/shezcode
+
+if application "Terminal" is running then
+	tell application "Terminal"
+		do script ""
+		activate
+	end tell
+else
+	tell application "Terminal"
+		activate
+	end tell
+end if
+
+tell application "System Events" to tell process "Raycast" to keystroke "w" using command down
