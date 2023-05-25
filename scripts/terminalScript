@@ -13,15 +13,11 @@
 # @raycast.author shezcode
 # @raycast.authorURL https://raycast.com/shezcode
 
-if application "Terminal" is running then
-	tell application "Terminal"
-		do script ""
-		activate
-	end tell
-else
-	tell application "Terminal"
-		activate
-	end tell
-end if
+tell application "iTerm"
+  set newWindow to (create window with default profile)
+  tell current session of newWindow
+    write text "cd ~/; clear; pwd"
+  end tell
+end tell
 
 tell application "System Events" to tell process "Raycast" to keystroke "w" using command down
