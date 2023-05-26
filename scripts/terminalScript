@@ -14,10 +14,8 @@
 # @raycast.authorURL https://raycast.com/shezcode
 
 tell application "iTerm"
-  set newWindow to (create window with default profile)
-  tell current session of newWindow
-    write text "cd ~/; clear; pwd"
-  end tell
+  create window with default profile
 end tell
 
 tell application "System Events" to tell process "Raycast" to keystroke "w" using command down
+
