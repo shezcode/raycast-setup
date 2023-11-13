@@ -13,8 +13,8 @@
 # @raycast.author shezcode
 # @raycast.authorURL https://raycast.com/shezcode
 
-tell application "iTerm"
-  create window with default profile
+tell application "Alacritty"
+  create window 
 end tell
 
 tell application "System Events" to tell process "Raycast" to keystroke "w" using command down
